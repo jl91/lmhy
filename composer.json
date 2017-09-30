@@ -1,6 +1,6 @@
 {
-    "name": "jl91/lmhy",
-    "description": "Let Me Help You",
+    "name": "jl91/lmhy-api",
+    "description": "Let Me Help You api",
     "type": "project",
     "license": "LGPL",
     "authors": [
@@ -10,5 +10,7 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "slim/slim": "^3.0"
+    }
 }
