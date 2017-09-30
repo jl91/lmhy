@@ -1,0 +1,14 @@
+{
+    "name": "jl91/lmhy",
+    "description": "Let Me Help You",
+    "type": "project",
+    "license": "LGPL",
+    "authors": [
+        {
+            "name": "John Lennnon de Melo Fernandes",
+            "email": "jlfernandes91@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
