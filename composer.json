@@ -1,26 +1,32 @@
 {
-    "name": "jl91/lmhy-api",
-    "description": "Let Me Help You api",
-    "type": "project",
-    "license": "LGPL",
-    "authors": [
-        {
-            "name": "John Lennnon de Melo Fernandes",
-            "email": "jlfernandes91@hotmail.com"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {
-        "slim/slim": "^3.0",
-        "doctrine/orm": "^2.5.5"
-    },
-    "require-dev": {
-        "doctrine/migrations": "^1.5",
-        "codeception/codeception": "^2.3",
-        "squizlabs/PHP_CodeSniffer": "^3.1",
-        "phpmd/phpmd": "^2.6"
-    },
-    "scripts": {
-        "serve": "php -S 0.0.0.0:8080  public/index.php"
+  "name": "jl91/lmhy-api",
+  "description": "Let Me Help You api",
+  "type": "project",
+  "license": "LGPL",
+  "authors": [
+    {
+      "name": "John Lennnon de Melo Fernandes",
+      "email": "jlfernandes91@hotmail.com"
     }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "slim/slim": "^3.0",
+    "doctrine/orm": "^2.5.5",
+    "monolog/monolog": "^1.23"
+  },
+  "require-dev": {
+    "doctrine/migrations": "^1.5",
+    "codeception/codeception": "^2.3",
+    "squizlabs/PHP_CodeSniffer": "^3.1",
+    "phpmd/phpmd": "^2.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lmhy\\": "./src"
+    }
+  },
+  "scripts": {
+    "serve": "php -S 0.0.0.0:8080  public/index.php"
+  }
 }
