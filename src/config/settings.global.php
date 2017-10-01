@@ -11,4 +11,12 @@ return [
             'level' => \Monolog\Logger::DEBUG,
         ],
     ],
+    'routes' => [
+        (object)[
+            'pattern' => '/',
+            'controller' => '',
+            'action' => '',
+            'methods' => ['GET', 'POST', 'PUT', 'DELETE']
+        ]
+    ]
 ];

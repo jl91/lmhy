@@ -22,16 +22,13 @@ $localSettings = [];
 
 $globalSettings = require_once $globalSettingsFile;
 
-if (is_file($globalSettingsFile)) {
+if (is_file($localSettingsFile)) {
     $localSettings = require_once $localSettingsFile;
 }
 
 $settings = array_replace_recursive($globalSettings, $localSettings);
 
-var_dump($settings);
-exit();
-
-$app = new \Slim\App($settings);
+$app = \Lmhy\Bootstrap::setUp($settings);
 
 $app->getContainer();
 
